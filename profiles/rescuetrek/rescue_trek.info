@@ -1,0 +1,113 @@
+; Packaging information for rescue_trek
+name = "Rescue Trek"
+description = ""
+exclusive = "1"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Chaos tool suite
+dependencies[] = ctools
+; Context
+dependencies[] = context
+dependencies[] = context_layouts
+dependencies[] = context_ui
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = overlay
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = user
+; Display Suite
+dependencies[] = ds
+; Flex Slider
+dependencies[] = flexslider
+dependencies[] = flexslider_fields
+dependencies[] = flexslider_views
+; Other
+dependencies[] = browserclass
+dependencies[] = libraries
+dependencies[] = module_filter
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+; Theme Tools
+dependencies[] = delta
+dependencies[] = delta_blocks
+dependencies[] = delta_color
+dependencies[] = delta_ui
+dependencies[] = omega_tools
+; Views
+dependencies[] = views
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+
+; ----------
+; Variables
+; ----------
+variables[additional_settings__active_tab_dynamic_lead] = 'edit-workflow'
+variables[admin_theme] = 'seven'
+variables[comment_default_mode_dynamic_lead] = 1
+variables[comment_default_per_page_dynamic_lead] = '50'
+variables[comment_dynamic_lead] = '0'
+variables[comment_form_location_dynamic_lead] = 1
+variables[comment_preview_dynamic_lead] = '1'
+variables[comment_subject_field_dynamic_lead] = 1
+variables[context_block_rebuild_needed] = true
+variables[date_default_timezone] = 'America/New_York'
+variables[delta_blocks_branding_logo_linked] = true
+variables[delta_blocks_branding_logo_render] = true
+variables[delta_blocks_branding_site_name_linked] = true
+variables[delta_blocks_breadcrumb_current] = true
+variables[delta_blocks_breadcrumb_title_hidden] = true
+variables[delta_blocks_logo_linked] = true
+variables[delta_blocks_site_name_linked] = true
+variables[field_bundle_settings_node__dynamic_lead][extra_fields][form][title][weight] = '-5'
+variables[filter_fallback_format] = 'plain_text'
+variables[menu_parent_dynamic_lead] = 'main-menu:0'
+variables[node_admin_theme] = 1
+variables[node_options_dynamic_lead][0] = 'status'
+variables[node_options_page][0] = 'status'
+variables[node_preview_dynamic_lead] = '1'
+variables[pathauto_blog_pattern] = 'blogs/[user:name]'
+variables[pathauto_forum_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_node_article_pattern] = 'article/[node:title]'
+variables[pathauto_node_dynamic_lead_pattern] = '[node:title]'
+variables[pathauto_node_page_pattern] = '[node:title]'
+variables[pathauto_node_pattern] = 'content/[node:title]'
+variables[pathauto_punctuation_hyphen] = 1
+variables[pathauto_taxonomy_term_pattern] = '[term:vocabulary]/[term:name]'
+variables[pathauto_user_pattern] = 'users/[user:name]'
+variables[path_alias_whitelist][node] = true
+variables[save_continue_dynamic_lead] = 'Save and add fields'
+variables[theme_default] = 'threscue01'
+variables[user_pictures] = '1'
+variables[user_picture_dimensions] = '1024x1024'
+variables[user_picture_file_size] = '800'
+variables[user_picture_style] = 'thumbnail'
+variables[user_register] = 2
+
