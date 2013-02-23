@@ -1,7 +1,5 @@
-; Packaging information for rescue_trek
-name = "Rescue Trek"
-description = ""
-exclusive = "1"
+name = Rescue
+description = "This will have the default profile settings for the Rescue Trek"
 core = "7.x"
 ; ----------
 ; Dependencies
@@ -65,6 +63,7 @@ dependencies[] = views
 dependencies[] = views_ui
 ; Features
 dependencies[] = features
+dependencies[] = restrk_content_types
 
 ; ----------
 ; Variables
@@ -86,6 +85,13 @@ variables[delta_blocks_breadcrumb_current] = true
 variables[delta_blocks_breadcrumb_title_hidden] = true
 variables[delta_blocks_logo_linked] = true
 variables[delta_blocks_site_name_linked] = true
+variables[features_ignored_orphans][image] = 'image'
+variables[features_ignored_orphans][file] = 'file'
+variables[features_ignored_orphans][strongarm] = 'strongarm'
+variables[features_ignored_orphans][ctools] = 'ctools'
+variables[features_ignored_orphans][taxonomy] = 'taxonomy'
+variables[features_ignored_orphans][options] = 'options'
+variables[features_ignored_orphans][views] = 'views'
 variables[field_bundle_settings_node__dynamic_lead][extra_fields][form][title][weight] = '-5'
 variables[filter_fallback_format] = 'plain_text'
 variables[menu_parent_dynamic_lead] = 'main-menu:0'
