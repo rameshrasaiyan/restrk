@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the restrk_views feature.
+ */
+
+include_once 'restrk_views.features.inc';

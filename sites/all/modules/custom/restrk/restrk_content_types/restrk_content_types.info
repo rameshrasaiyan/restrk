@@ -1,15 +1,14 @@
 name = restrk_content_types
 core = 7.x
 package = Features
+php = 5.2.4
 version = 7.x-1.0
 project = restrk_content_types
 dependencies[] = node
 dependencies[] = text
-features[context][] = threscue01_home
 features[ctools][] = context:context:3
 features[ctools][] = delta:delta:3
 features[ctools][] = strongarm:strongarm:1
-features[delta][] = home_page
 features[features_api][] = api:1
 features[node][] = dynamic_lead
 features_exclude[dependencies][context] = context
