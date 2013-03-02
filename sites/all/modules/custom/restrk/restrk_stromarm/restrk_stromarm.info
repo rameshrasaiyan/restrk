@@ -1,6 +1,9 @@
 name = restrk_stromarm
 core = 7.x
 package = Features
+php = 5.2.4
+dependencies[] = ctools
+dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[variable][] = additional_settings__active_tab_dynamic_lead
@@ -92,5 +95,3 @@ features[variable][] = user_picture_file_size
 features[variable][] = user_picture_style
 features[variable][] = user_pictures
 features[variable][] = user_register
-features_exclude[dependencies][ctools] = ctools
-features_exclude[dependencies][strongarm] = strongarm

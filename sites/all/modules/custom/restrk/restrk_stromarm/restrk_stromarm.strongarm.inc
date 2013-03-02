@@ -385,6 +385,9 @@ function restrk_stromarm_strongarm() {
     'restrk_views' => array(
       'views_view' => 'f8ebd1a6c0d280e31ea209aa2ba9318a',
     ),
+    'restrk_stromarm' => array(
+      'variable' => '62a28739a3bf30b0454f2fa2f7d20bb3',
+    ),
   );
   $export['features_codecache'] = $strongarm;
 
