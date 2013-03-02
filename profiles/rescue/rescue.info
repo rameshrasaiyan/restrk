@@ -1,9 +1,14 @@
-name = Rescue
-description = "This will have the default profile settings for the Rescue Trek"
+; Packaging information for rescue
+name = "rescue"
+description = ""
+exclusive = "1"
 core = "7.x"
 ; ----------
 ; Dependencies
 ; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
 ; Chaos tool suite
 dependencies[] = ctools
 ; Context
@@ -15,7 +20,6 @@ dependencies[] = block
 dependencies[] = color
 dependencies[] = comment
 dependencies[] = contextual
-dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field
 dependencies[] = field_sql_storage
@@ -37,16 +41,21 @@ dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
-dependencies[] = toolbar
 dependencies[] = user
 ; Display Suite
 dependencies[] = ds
+dependencies[] = ds_extras
+dependencies[] = ds_format
+dependencies[] = ds_forms
+dependencies[] = ds_search
+dependencies[] = ds_ui
 ; Flex Slider
 dependencies[] = flexslider
 dependencies[] = flexslider_fields
 dependencies[] = flexslider_views
 ; Other
 dependencies[] = browserclass
+dependencies[] = diff
 dependencies[] = libraries
 dependencies[] = module_filter
 dependencies[] = pathauto
@@ -64,12 +73,29 @@ dependencies[] = views_ui
 ; Features
 dependencies[] = features
 dependencies[] = restrk_content_types
+dependencies[] = restrk_menu
+dependencies[] = restrk_stromarm
+dependencies[] = restrk_taxonomy
+dependencies[] = restrk_views
 
 ; ----------
 ; Variables
 ; ----------
 variables[additional_settings__active_tab_dynamic_lead] = 'edit-workflow'
+variables[admin_menu_cache_client] = 1
+variables[admin_menu_components][admin_menu.icon] = true
+variables[admin_menu_components][admin_menu.menu] = true
+variables[admin_menu_components][admin_menu.search] = true
+variables[admin_menu_components][admin_menu.users] = true
+variables[admin_menu_components][admin_menu.account] = true
+variables[admin_menu_components][shortcut.links] = false
+variables[admin_menu_devel_modules_skip][admin_devel] = 0
+variables[admin_menu_devel_modules_skip][context_ui] = 0
+variables[admin_menu_devel_modules_skip][field_ui] = 0
+variables[admin_menu_devel_modules_skip][views_ui] = 0
+variables[admin_menu_margin_top] = 1
 variables[admin_theme] = 'seven'
+variables[advanced__active_tab] = 'edit-performance'
 variables[comment_default_mode_dynamic_lead] = 1
 variables[comment_default_per_page_dynamic_lead] = '50'
 variables[comment_dynamic_lead] = '0'
@@ -77,6 +103,21 @@ variables[comment_form_location_dynamic_lead] = 1
 variables[comment_preview_dynamic_lead] = '1'
 variables[comment_subject_field_dynamic_lead] = 1
 variables[context_block_rebuild_needed] = true
+variables[dashboard_stashed_blocks][0][module] = 'node'
+variables[dashboard_stashed_blocks][0][delta] = 'recent'
+variables[dashboard_stashed_blocks][0][region] = 'dashboard_main'
+variables[dashboard_stashed_blocks][1][module] = 'user'
+variables[dashboard_stashed_blocks][1][delta] = 'new'
+variables[dashboard_stashed_blocks][1][region] = 'dashboard_sidebar'
+variables[dashboard_stashed_blocks][2][module] = 'search'
+variables[dashboard_stashed_blocks][2][delta] = 'form'
+variables[dashboard_stashed_blocks][2][region] = 'dashboard_sidebar'
+variables[dashboard_stashed_blocks][3][module] = 'comment'
+variables[dashboard_stashed_blocks][3][delta] = 'recent'
+variables[dashboard_stashed_blocks][3][region] = 'dashboard_inactive'
+variables[dashboard_stashed_blocks][4][module] = 'user'
+variables[dashboard_stashed_blocks][4][delta] = 'online'
+variables[dashboard_stashed_blocks][4][region] = 'dashboard_inactive'
 variables[date_default_timezone] = 'America/New_York'
 variables[delta_blocks_branding_logo_linked] = true
 variables[delta_blocks_branding_logo_render] = true
